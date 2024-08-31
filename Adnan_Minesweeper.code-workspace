@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Adnan_Minesweeper",
+			"path": "."
+		},
+		{
+			"name": "css",
+			"path": "../Downloads/bootstrap-5.3.3-dist/css"
+		},
+		{
+			"name": "js",
+			"path": "../Downloads/bootstrap-5.3.3-dist/js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Adnan_Minesweeper"
+	}
+}

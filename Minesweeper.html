@@ -1,0 +1,61 @@
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="Minesweeper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="Minesweeper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Difficulty
+    </button>
+    <button type="button" class="btn btn-primary" onclick="Finished()"> Finished</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#" onclick="Seter('Easy')" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Easy</a></li>
+      <li><a class="dropdown-item" href="#" onclick="Seter('Medium')" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Medium </a></li>
+      <li><a class="dropdown-item" href="#" onclick="Seter('Hard')" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Hard</a></li>
+      <li><a class="dropdown-item" href="#" onclick="Seter('Try')" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Try</a></li>
+    </ul>
+  </div>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Rules</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Minesweeper is a game where mines are hidden in a grid of squares. Safe squares have numbers telling you how many mines touch the square. You can use the number clues to solve the game by opening all of the safe squares. If you click on a mine you lose the game!
+          
+          Windows Minesweeper always makes the first click safe. You open squares with the left mouse button and put flags on mines with the right mouse button. Pressing the right mouse button again changes your flag into a questionmark. When you open a square that does not touch any mines, it will be empty and the adjacent squares will automatically open in all directions until reaching squares that contain numbers. A common strategy for starting games is to randomly click until you get a big opening with lots of numbers.
+          
+          If you flag all of the mines touching a number, chording on the number opens the remaining squares. Chording is when you press both mouse buttons at the same time. This can save you a lot of work! However, if you place the correct number of flags on the wrong squares, chording will explode the mines.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Start Game</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
+    <button type="button" class="btn btn-success" style="margin: 20px;;" onclick="IDgiver();Ranom();Integ();">Redo</button>
+    <br>
+    <div style="display:inline-flexbox;" ><i class="fa fa-flag" style="font-size:48px;color:red"></i><b style="font-size:xx-large;" id="Flags"></b></div>
+    <div class="container" style="
+    border: solid 2px;
+    padding: 5px;
+    padding-left: 20px;
+    display: table-cell;">
+    <table  id="hightable" class="grider">
+      
+      <p  align="center" style="font-weight: 500;font-size: xx-large;">Start The Game!!!</p>
+    </div>
+  </div>
+  
+</body>
+</html>
